@@ -1,0 +1,10 @@
+version: '3.8'
+services:
+  diagnostics_explorer:
+    image: ohdsi/diagnosticsexplorer:3.2.5
+    build:
+      context: .
+      args:
+        APP_NAME: DiagnosticsExplorer
+    ports:
+      - "3838:3838"
